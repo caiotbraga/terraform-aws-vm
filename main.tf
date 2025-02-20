@@ -14,10 +14,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-08d70e59c07c61a3a"
+  ami           = "ami-00c257e12d6828491"
   instance_type = "t2.micro"
   key_name = "braga-oregon"
   tags = {
-    Name = "First Instance"
+    Name = "Terraform ansible Python"
   }
 }
